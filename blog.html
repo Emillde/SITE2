@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Blog MindSpace: articoli, approfondimenti e risorse per il benessere psicologico e crescita personale.">
+    <meta name="keywords" content="blog MindSpace, benessere psicologico, crescita personale, articoli psicologia, risorse educative">
+    <meta property="og:title" content="Blog - MindSpace">
+    <meta property="og:description" content="Approfondimenti e risorse per il tuo percorso di benessere e crescita personale">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="./images/og-blog.jpg">
+    
+    <title>Blog - MindSpace | Risorse e Approfondimenti</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- OpenDyslexic Font for Accessibility -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=OpenDyslexic&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/accessibility.css">
+</head>
+<body>
+    <!-- Accessibility Panel -->
+    <div id="accessibility-panel" class="accessibility-panel" role="region" aria-label="Pannello Accessibilità">
+        <button class="accessibility-toggle" aria-label="Apri pannello accessibilità" aria-expanded="false">
+            <span class="accessibility-icon">♿</span>
+        </button>
+        <div class="accessibility-content">
+            <h3>Accessibilità</h3>
+            <div class="accessibility-options">
+                <button id="focus-mode" class="accessibility-btn" aria-pressed="false">
+                    <span class="btn-icon">🎯</span> Modalità Focus
+                </button>
+                <button id="dyslexic-font" class="accessibility-btn" aria-pressed="false">
+                    <span class="btn-icon">📖</span> Font Dislessia
+                </button>
+                <button id="warm-contrast" class="accessibility-btn" aria-pressed="false">
+                    <span class="btn-icon">🌅</span> Contrasto Caldo
+                </button>
+                <button id="increase-font" class="accessibility-btn" aria-pressed="false">
+                    <span class="btn-icon">🔍</span> Aumenta Font
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Skip to main content for accessibility -->
+    <a href="#main-content" class="skip-link">Salta al contenuto principale</a>
+
+    <!-- Header Sticky Transparent -->
+    <header id="header" class="header-transparent" role="banner">
+        <nav class="nav-container" role="navigation" aria-label="Navigazione principale">
+            <div class="nav-brand">
+                <h1 class="brand-title"><a href="index.html">MindSpace</a></h1>
+                <span class="brand-tagline">Il tuo spazio per crescere</span>
+            </div>
+            <ul class="nav-menu" role="menubar">
+                <li role="none"><a href="index.html" role="menuitem">Home</a></li>
+                <li role="none"><a href="servizi.html" role="menuitem">Servizi</a></li>
+                <li role="none"><a href="metodo.html" role="menuitem">Metodo</a></li>
+                <li role="none"><a href="team.html" role="menuitem">Team</a></li>
+                <li role="none"><a href="blog.html" role="menuitem" class="active">Blog</a></li>
+                <li role="none"><a href="contatti.html" role="menuitem">Contatti</a></li>
+            </ul>
+            <button class="nav-toggle" aria-label="Menu di navigazione" aria-expanded="false">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Breadcrumbs -->
+    <nav class="breadcrumbs" role="navigation" aria-label="Breadcrumb">
+        <div class="container">
+            <ol>
+                <li><a href="index.html">Home</a></li>
+                <li><span>Blog</span></li>
+            </ol>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main id="main-content" role="main">
+        
+        <!-- Page Header -->
+        <section class="page-header" role="banner">
+            <div class="container">
+                <header class="section-header reveal-element">
+                    <h1 class="page-title">Blog & Risorse</h1>
+                    <p class="page-subtitle">Approfondimenti, articoli e risorse per il tuo benessere e crescita personale</p>
+                </header>
+            </div>
+        </section>
+
+        <!-- Featured Article -->
+        <section class="featured-article" role="region">
+            <div class="container">
+                <header class="section-header reveal-element">
+                    <h2 class="section-title">Articolo in Evidenza</h2>
+                </header>
+                
+                <article class="featured-post reveal-element" role="article">
+                    <div class="featured-image">
+                        <div class="image-placeholder">🌟</div>
+                    </div>
+                    <div class="featured-content">
+                        <div class="post-meta">
+                            <span class="post-category featured">In Evidenza</span>
+                            <time class="post-date" datetime="2024-01-20">20 Gennaio 2024</time>
+                            <span class="post-author">Dr. Sara Rossi</span>
+                        </div>
+                        <h3 class="post-title">La Scienza della Felicità: Strategie Evidence-Based per il Benessere</h3>
+                        <p class="post-excerpt">
+                            Esploriamo le scoperte più recenti della psicologia positiva e le strategie scientificamente validate per aumentare il benessere quotidiano. Dalla gratitudine alla mindfulness, scopri come applicare queste tecniche nella tua vita.
+                        </p>
+                        <div class="post-tags">
+                            <span class="tag">Psicologia Positiva</span>
+                            <span class="tag">Benessere</span>
+                            <span class="tag">Scienza</span>
+                        </div>
+                        <a href="articolo/scienza-felicita.html" class="read-more">Leggi tutto</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Blog Categories -->
+        <section class="blog-categories" role="region">
+            <div class="container">
+                <header class="section-header reveal-element">
+                    <h2 class="section-title">Esplora per Categoria</h2>
+                </header>
+                
+                <div class="categories-grid reveal-element">
+                    <div class="category-card">
+                        <div class="category-icon">🧠</div>
+                        <h3 class="category-name">Psicologia</h3>
+                        <p class="category-description">Approfondimenti su salute mentale, emozioni e relazioni</p>
+                        <span class="post-count">12 articoli</span>
+                        <a href="#categoria-psicologia" class="category-link">Esplora</a>
+                    </div>
+                    
+                    <div class="category-card">
+                        <div class="category-icon">🌱</div>
+                        <h3 class="category-name">Crescita Personale</h3>
+                        <p class="category-description">Guide e strategie per lo sviluppo personale</p>
+                        <span class="post-count">8 articoli</span>
+                        <a href="#categoria-crescita" class="category-link">Esplora</a>
+                    </div>
+                    
+                    <div class="category-card">
+                        <div class="category-icon">💼</div>
+                        <h3 class="category-name">Lavoro e Performance</h3>
+                        <p class="category-description">Consigli per carriera, leadership e produttività</p>
+                        <span class="post-count">6 articoli</span>
+                        <a href="#categoria-lavoro" class="category-link">Esplora</a>
+                    </div>
+                    
+                    <div class="category-card">
+                        <div class="category-icon">🧘‍♀️</div>
+                        <h3 class="category-name">Benessere</h3>
+                        <p class="category-description">Mindfulness, stress management e stile di vita</p>
+                        <span class="post-count">10 articoli</span>
+                        <a href="#categoria-benessere" class="category-link">Esplora</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Recent Articles -->
+        <section class="recent-articles" role="region">
+            <div class="container">
+                <header class="section-header reveal-element">
+                    <h2 class="section-title">Articoli Recenti</h2>
+                    <p class="section-subtitle">Ultime pubblicazioni dal nostro team di esperti</p>
+                </header>
+
+                <div class="blog-grid">
+                    <article class="blog-card reveal-element" role="article">
+                        <div class="blog-image">
+                            <div class="image-placeholder">📚</div>
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span class="blog-category">Psicologia</span>
+                                <time class="blog-date" datetime="2024-01-15">15 Gennaio 2024</time>
+                            </div>
+                            <h3 class="blog-title">Gestire l'Ansia: Strategie Pratiche che Funzionano Davvero</h3>
+                            <p class="blog-excerpt">Scopri tecniche efficaci basate sull'evidenza scientifica per gestire l'ansia quotidiana e ritrovare la serenità.</p>
+                            <div class="blog-author">
+                                <span class="author-name">Dr. Sara Rossi</span>
+                            </div>
+                            <div class="blog-tags">
+                                <span class="tag">Ansia</span>
+                                <span class="tag">Stress</span>
+                            </div>
+                            <a href="articolo/gestire-ansia.html" class="blog-link">Leggi tutto</a>
+                        </div>
+                    </article>
+
+                    <article class="blog-card reveal-element" role="article">
+                        <div class="blog-image">
+                            <div class="image-placeholder">🎓</div>
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span class="blog-category">Educazione</span>
+                                <time class="blog-date" datetime="2024-01-10">10 Gennaio 2024</time>
+                            </div>
+                            <h3 class="blog-title">Apprendimento Efficace: Metodi e Tecniche per Studiare Meglio</h3>
+                            <p class="blog-excerpt">Approcci innovativi basati sulle neuroscienze per ottimizzare il tuo processo di apprendimento e memorizzazione.</p>
+                            <div class="blog-author">
+                                <span class="author-name">Dr. Marco Bianchi</span>
+                            </div>
+                            <div class="blog-tags">
+                                <span class="tag">Apprendimento</span>
+                                <span class="tag">Studio</span>
+                            </div>
+                            <a href="articolo/apprendimento-efficace.html" class="blog-link">Leggi tutto</a>
+                        </div>
+                    </article>
+
+                    <article class="blog-card reveal-element" role="article">
+                        <div class="blog-image">
+                            <div class="image-placeholder">🧘‍♀️</div>
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span class="blog-category">Benessere</span>
+                                <time class="blog-date" datetime="2024-01-05">5 Gennaio 2024</time>
+                            </div>
+                            <h3 class="blog-title">Mindfulness: La Pratica Quotidiana che Cambia la Tua Vita</h3>
+                            <p class="blog-excerpt">Integrare la mindfulness nella tua routine quotidiana per migliorare il benessere mentale e ridurre lo stress.</p>
+                            <div class="blog-author">
+                                <span class="author-name">Dott.ssa Laura Verdi</span>
+                            </div>
+                            <div class="blog-tags">
+                                <span class="tag">Mindfulness</span>
+                                <span class="tag">Meditazione</span>
+                            </div>
+                            <a href="articolo/mindfulness-quotidiana.html" class="blog-link">Leggi tutto</a>
+                        </div>
+                    </article>
+
+                    <article class="blog-card reveal-element" role="article">
+                        <div class="blog-image">
+                            <div class="image-placeholder">💪</div>
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span class="blog-category">Crescita Personale</span>
+                                <time class="blog-date" datetime="2023-12-28">28 Dicembre 2023</time>
+                            </div>
+                            <h3 class="blog-title">Intelligenza Emotiva: Come Svilupparla per Migliorare le Relazioni</h3>
+                            <p class="blog-excerpt">Guida pratica per riconoscere, comprendere e gestire le emozioni tue e altrui, migliorando ogni relazione.</p>
+                            <div class="blog-author">
+                                <span class="author-name">Dr. Paolo Gialli</span>
+                            </div>
+                            <div class="blog-tags">
+                                <span class="tag">Emozioni</span>
+                                <span class="tag">Relazioni</span>
+                            </div>
+                            <a href="articolo/intelligenza-emotiva.html" class="blog-link">Leggi tutto</a>
+                        </div>
+                    </article>
+
+                    <article class="blog-card reveal-element" role="article">
+                        <div class="blog-image">
+                            <div class="image-placeholder">💼</div>
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span class="blog-category">Lavoro</span>
+                                <time class="blog-date" datetime="2023-12-20">20 Dicembre 2023</time>
+                            </div>
+                            <h3 class="blog-title">Burnout: Come Riconoscere i Segnali e Prevenirlo Efficacemente</h3>
+                            <p class="blog-excerpt">Strategie pratiche per identificare i sintomi del burnout e implementare misure preventive per il benessere lavorativo.</p>
+                            <div class="blog-author">
+                                <span class="author-name">Dott.ssa Anna Rosa</span>
+                            </div>
+                            <div class="blog-tags">
+                                <span class="tag">Burnout</span>
+                                <span class="tag">Lavoro</span>
+                            </div>
+                            <a href="articolo/burnout-prevenzione.html" class="blog-link">Leggi tutto</a>
+                        </div>
+                    </article>
+
+                    <article class="blog-card reveal-element" role="article">
+                        <div class="blog-image">
+                            <div class="image-placeholder">🎯</div>
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span class="blog-category">Performance</span>
+                                <time class="blog-date" datetime="2023-12-15">15 Dicembre 2023</time>
+                            </div>
+                            <h3 class="blog-title">Goal Setting: Come Definire Obiettivi che Davvero Funzionano</h3>
+                            <p class="blog-excerpt">Metodi scientifici per impostare obiettivi realistici e motivanti che ti aiutino a raggiungere i tuoi traguardi.</p>
+                            <div class="blog-author">
+                                <span class="author-name">Dr. Marco Bianchi</span>
+                            </div>
+                            <div class="blog-tags">
+                                <span class="tag">Obiettivi</span>
+                                <span class="tag">Motivazione</span>
+                            </div>
+                            <a href="articolo/goal-setting.html" class="blog-link">Leggi tutto</a>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Load More Button -->
+                <div class="load-more-container reveal-element">
+                    <button class="load-more-btn" onclick="loadMoreArticles()">Carica altri articoli</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter Section -->
+        <section class="newsletter-section" role="region">
+            <div class="container">
+                <div class="newsletter-content reveal-element">
+                    <h2>Rimani Aggiornato</h2>
+                    <p>Iscriviti alla nostra newsletter per ricevere articoli esclusivi, risorse e aggiornamenti sui nostri servizi.</p>
+                    <form class="newsletter-form" onsubmit="subscribeNewsletter(event)">
+                        <div class="form-group">
+                            <input type="email" placeholder="La tua email" required>
+                            <button type="submit" class="newsletter-btn">Iscriviti</button>
+                        </div>
+                        <div class="privacy-note">
+                            <input type="checkbox" id="privacy" required>
+                            <label for="privacy">Accetto la <a href="privacy.html">privacy policy</a></label>
+                        </div>
+                    </form>
+                    <div class="newsletter-benefits">
+                        <div class="benefit">
+                            <span class="benefit-icon">📧</span>
+                            <span>Articoli esclusivi ogni settimana</span>
+                        </div>
+                        <div class="benefit">
+                            <span class="benefit-icon">🎁</span>
+                            <span>Risorse gratuite per iscritti</span>
+                        </div>
+                        <div class="benefit">
+                            <span class="benefit-icon">🔔</span>
+                            <span>Nessuno spam, solo valore</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Popular Tags -->
+        <section class="popular-tags" role="region">
+            <div class="container">
+                <header class="section-header reveal-element">
+                    <h2 class="section-title">Tag Popolari</h2>
+                </header>
+                
+                <div class="tags-cloud reveal-element">
+                    <span class="tag-large">Ansia</span>
+                    <span class="tag-medium">Stress</span>
+                    <span class="tag-large">Mindfulness</span>
+                    <span class="tag-medium">Relazioni</span>
+                    <span class="tag-small">Apprendimento</span>
+                    <span class="tag-medium">Benessere</span>
+                    <span class="tag-large">Crescita Personale</span>
+                    <span class="tag-small">Leadership</span>
+                    <span class="tag-medium">Burnout</span>
+                    <span class="tag-small">Motivazione</span>
+                    <span class="tag-medium">Emozioni</span>
+                    <span class="tag-small">Performance</span>
+                    <span class="tag-medium">Comunicazione</span>
+                    <span class="tag-small">Autostima</span>
+                    <span class="tag-medium">Resilienza</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>MindSpace</h3>
+                    <p>Il tuo spazio per la crescita personale e professionale</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">📘</a>
+                        <a href="#" aria-label="Instagram">📷</a>
+                        <a href="#" aria-label="LinkedIn">💼</a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Blog</h4>
+                    <ul>
+                        <li><a href="#categoria-psicologia">Psicologia</a></li>
+                        <li><a href="#categoria-crescita">Crescita Personale</a></li>
+                        <li><a href="#categoria-lavoro">Lavoro</a></li>
+                        <li><a href="#categoria-benessere">Benessere</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contatti</h4>
+                    <address>
+                        <p>📍 Via del Benessere 10, 00100 Roma</p>
+                        <p>📞 +39 06 12345678</p>
+                        <p>✉️ info@mindspace.it</p>
+                    </address>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Orari</h4>
+                    <p>Lunedì - Venerdì: 9:00 - 20:00</p>
+                    <p>Sabato: 9:00 - 13:00</p>
+                    <p>Domenica: Chiuso</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 MindSpace. Tutti i diritti riservati.</p>
+                <p>P.IVA: 12345678901 | <a href="privacy.html">Privacy Policy</a> | <a href="cookies.html">Cookie Policy</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/accessibility.js"></script>
+    
+    <script>
+        // Page-specific functions
+        function loadMoreArticles() {
+            // Future implementation for loading more articles
+            console.log('Loading more articles...');
+            // This would typically make an AJAX call to load more content
+        }
+        
+        function subscribeNewsletter(event) {
+            event.preventDefault();
+            const email = event.target.querySelector('input[type="email"]').value;
+            const privacy = event.target.querySelector('#privacy').checked;
+            
+            if (email && privacy) {
+                // Future implementation for newsletter subscription
+                alert('Grazie per esserti iscritto alla newsletter!');
+                event.target.reset();
+            }
+        }
+        
+        // Tag filtering (future feature)
+        document.addEventListener('DOMContentLoaded', function() {
+            // Add click handlers for tags
+            const tags = document.querySelectorAll('.tags-cloud .tag-large, .tags-cloud .tag-medium, .tags-cloud .tag-small');
+            tags.forEach(tag => {
+                tag.addEventListener('click', function() {
+                    const tagName = this.textContent;
+                    console.log('Filter by tag:', tagName);
+                    // Future implementation for filtering articles by tag
+                });
+            });
+            
+            // Category card interactions
+            const categoryCards = document.querySelectorAll('.category-card');
+            categoryCards.forEach(card => {
+                card.addEventListener('click', function(e) {
+                    if (!e.target.classList.contains('category-link')) {
+                        const link = this.querySelector('.category-link');
+                        if (link) link.click();
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

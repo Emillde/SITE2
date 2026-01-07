@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="MindSpace - Servizio di supporto psicologico ed educativo. Trova il tuo percorso verso il benessere mentale.">
+    <meta name="keywords" content="psicologia, terapia, supporto educativo, benessere mentale, crescita personale">
+    <meta property="og:title" content="MindSpace - Il tuo spazio per la crescita personale">
+    <meta property="og:description" content="Servizi di supporto psicologico ed educativo con approccio innovativo e accessibile">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="./images/og-image.jpg">
+    
+    <title>MindSpace - Supporto Psicologico ed Educativo</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- OpenDyslexic Font for Accessibility -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=OpenDyslexic&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/accessibility.css">
+</head>
+<body>
+    <!-- Accessibility Panel -->
+    <div id="accessibility-panel" class="accessibility-panel" role="region" aria-label="Pannello Accessibilità">
+        <button class="accessibility-toggle" aria-label="Apri pannello accessibilità" aria-expanded="false">
+            <span class="accessibility-icon">♿</span>
+        </button>
+        <div class="accessibility-content">
+            <h3>Accessibilità</h3>
+            <div class="accessibility-options">
+                <button id="focus-mode" class="accessibility-btn" aria-pressed="false">
+                    <span class="btn-icon">🎯</span> Modalità Focus
+                </button>
+                <button id="dyslexic-font" class="accessibility-btn" aria-pressed="false">
+                    <span class="btn-icon">📖</span> Font Dislessia
+                </button>
+                <button id="warm-contrast" class="accessibility-btn" aria-pressed="false">
+                    <span class="btn-icon">🌅</span> Contrasto Caldo
+                </button>
+                <button id="increase-font" class="accessibility-btn" aria-pressed="false">
+                    <span class="btn-icon">🔍</span> Aumenta Font
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Skip to main content for accessibility -->
+    <a href="#main-content" class="skip-link">Salta al contenuto principale</a>
+
+    <!-- Header Sticky Transparent -->
+    <header id="header" class="header-transparent" role="banner">
+        <nav class="nav-container" role="navigation" aria-label="Navigazione principale">
+            <div class="nav-brand">
+                <a href="index.html" class="brand-link" aria-label="MindSpace - Torna alla homepage">
+                    <h1 class="brand-title">MindSpace</h1>
+                    <span class="brand-tagline">Il tuo spazio per crescere</span>
+                </a>
+            </div>
+            <ul class="nav-menu" role="menubar">
+                <li role="none"><a href="index.html" role="menuitem">Home</a></li>
+                <li role="none"><a href="chi-siamo.html" role="menuitem">Chi Siamo</a></li>
+                <li role="none"><a href="servizi.html" role="menuitem">Servizi</a></li>
+                <li role="none"><a href="metodo.html" role="menuitem">Metodo</a></li>
+                <li role="none"><a href="team.html" role="menuitem">Team</a></li>
+                <li role="none"><a href="blog.html" role="menuitem">Blog</a></li>
+                <li role="none"><a href="contatti.html" role="menuitem">Contatti</a></li>
+            </ul>
+            <button class="nav-toggle" aria-label="Menu di navigazione" aria-expanded="false">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content" role="main">
+        
+        <!-- Hero Section con Video/Animazione -->
+        <section id="hero" class="hero-section" role="banner">
+            <div class="hero-background">
+                <div class="hero-animation"></div>
+                <div class="hero-overlay"></div>
+            </div>
+            <div class="hero-content">
+                <div class="hero-text reveal-element">
+                    <h2 class="hero-title">Trova la tua via verso il benessere</h2>
+                    <p class="hero-subtitle">Un approccio integrato tra supporto psicologico e percorsi educativi</p>
+                    <div class="hero-cta">
+                        <button id="start-journey" class="cta-primary" aria-label="Inizia il tuo percorso con MindSpace">
+                            Inizia il tuo percorso
+                        </button>
+                        <button id="discover-services" class="cta-secondary" aria-label="Scopri i nostri servizi">
+                            Scopri i servizi
+                        </button>
+                    </div>
+                </div>
+                <div class="quiz-prompt reveal-element">
+                    <p>Non sai da dove iniziare?</p>
+                    <button id="take-quiz" class="quiz-trigger">
+                        <span class="quiz-icon">🧭</span> Trova il percorso adatto a te
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Servizi Section -->
+        <section id="servizi" class="services-section" role="region" aria-labelledby="servizi-title">
+            <div class="container">
+                <header class="section-header reveal-element">
+                    <h2 id="servizi-title" class="section-title">I Nostri Servizi</h2>
+                    <p class="section-subtitle">Due pilastri distinti ma integrati per il tuo benessere</p>
+                </header>
+                
+                <div class="services-grid">
+                    <article class="service-card reveal-element" role="article">
+                        <div class="service-icon">
+                            <span class="icon-therapy">🧠</span>
+                        </div>
+                        <div class="service-content">
+                            <h3 class="service-title">Area Terapia</h3>
+                            <p class="service-description">Supporto psicologico professionale con psicologi e psicoterapeuti specializzati</p>
+                            <ul class="service-features">
+                                <li>Terapia individuale</li>
+                                <li>Consulenza psicologica</li>
+                                <li>Percorsi personalizzati</li>
+                            </ul>
+                            <button class="service-cta" data-service="terapia">Scopri di più</button>
+                        </div>
+                    </article>
+
+                    <article class="service-card reveal-element" role="article">
+                        <div class="service-icon">
+                            <span class="icon-evolutive">🌱</span>
+                        </div>
+                        <div class="service-content">
+                            <h3 class="service-title">Area Evolutiva</h3>
+                            <p class="service-description">Percorsi educativi con educatori specializzati per la crescita personale</p>
+                            <ul class="service-features">
+                                <li>Sviluppo competenze</li>
+                                <li>Formazione personalizzata</li>
+                                <li>Accompagnamento evolutivo</li>
+                            </ul>
+                            <button class="service-cta" data-service="evolutiva">Scopri di più</button>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Approccio Metodologico -->
+        <section id="metodo" class="method-section" role="region" aria-labelledby="metodo-title">
+            <div class="container">
+                <header class="section-header reveal-element">
+                    <h2 id="metodo-title" class="section-title">Il Nostro Metodo MindSpace</h2>
+                    <p class="section-subtitle">Un approccio innovativo basato sull'integrazione e l'accessibilità</p>
+                </header>
+                
+                <div class="method-horizontal-scroll">
+                    <div class="method-step reveal-element">
+                        <div class="step-number">1</div>
+                        <h3>Ascolto</h3>
+                        <p>Comprendiamo le tue esigenze attraverso un'analisi approfondita</p>
+                    </div>
+                    <div class="method-step reveal-element">
+                        <div class="step-number">2</div>
+                        <h3>Valutazione</h3>
+                        <p>Identifichiamo il percorso più adatto alle tue caratteristiche</p>
+                    </div>
+                    <div class="method-step reveal-element">
+                        <div class="step-number">3</div>
+                        <h3>Pianificazione</h3>
+                        <p>Creiamo un programma personalizzato basato sui tuoi obiettivi</p>
+                    </div>
+                    <div class="method-step reveal-element">
+                        <div class="step-number">4</div>
+                        <h3>Accompagnamento</h3>
+                        <p>Ti supportiamo costantemente nel tuo percorso di crescita</p>
+                    </div>
+                    <div class="method-step reveal-element">
+                        <div class="step-number">5</div>
+                        <h3>Evoluzione</h3>
+                        <p>Celebriamo insieme i tuoi progressi e pianifichiamo i prossimi passi</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Team Section -->
+        <section id="team" class="team-section" role="region" aria-labelledby="team-title">
+            <div class="container">
+                <header class="section-header reveal-element">
+                    <h2 id="team-title" class="section-title">Il Nostro Team</h2>
+                    <p class="section-subtitle">Professionisti dedicati al tuo benessere</p>
+                </header>
+                
+                <div class="team-grid">
+                    <article class="team-member reveal-element" role="article">
+                        <div class="member-photo">
+                            <div class="photo-placeholder">👤</div>
+                        </div>
+                        <div class="member-info">
+                            <h3 class="member-name">Dr. Sara Rossi</h3>
+                            <p class="member-role">Psicoterapeuta</p>
+                            <p class="member-bio">Specializzata in terapia cognitivo-comportamentale con 10 anni di esperienza</p>
+                            <div class="member-credentials">
+                                <span class="credential">Psicologa</span>
+                                <span class="credential">Psicoterapeuta</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="team-member reveal-element" role="article">
+                        <div class="member-photo">
+                            <div class="photo-placeholder">👤</div>
+                        </div>
+                        <div class="member-info">
+                            <h3 class="member-name">Dr. Marco Bianchi</h3>
+                            <p class="member-role">Educatore Professionale</p>
+                            <p class="member-bio">Esperto in sviluppo delle competenze e apprendimento personalizzato</p>
+                            <div class="member-credentials">
+                                <span class="credential">Educatore</span>
+                                <span class="credential">Formatore</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="team-member reveal-element" role="article">
+                        <div class="member-photo">
+                            <div class="photo-placeholder">👤</div>
+                        </div>
+                        <div class="member-info">
+                            <h3 class="member-name">Dott.ssa Laura Verdi</h3>
+                            <p class="member-role">Psicologa dell'Età Evolutiva</p>
+                            <p class="member-bio">Dedicata al supporto di bambini, adolescenti e famiglie</p>
+                            <div class="member-credentials">
+                                <span class="credential">Psicologa</span>
+                                <span class="credential">Neuropsicologa</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="team-member reveal-element" role="article">
+                        <div class="member-photo">
+                            <div class="photo-placeholder">👤</div>
+                        </div>
+                        <div class="member-info">
+                            <h3 class="member-name">Dr. Paolo Gialli</h3>
+                            <p class="member-role">Counselor</p>
+                            <p class="member-bio">Specializzato in counseling relazionale e di coppia</p>
+                            <div class="member-credentials">
+                                <span class="credential">Counselor</span>
+                                <span class="credential">Mediatore</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Risorse & Blog -->
+        <section id="risorse" class="resources-section" role="region" aria-labelledby="risorse-title">
+            <div class="container">
+                <header class="section-header reveal-element">
+                    <h2 id="risorse-title" class="section-title">Risorse & Blog</h2>
+                    <p class="section-subtitle">Articoli e approfondimenti per il tuo benessere</p>
+                </header>
+                
+                <div class="blog-grid">
+                    <article class="blog-card reveal-element" role="article">
+                        <div class="blog-image">
+                            <div class="image-placeholder">📚</div>
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span class="blog-category">Psicologia</span>
+                                <time class="blog-date" datetime="2024-01-15">15 Gennaio 2024</time>
+                            </div>
+                            <h3 class="blog-title">Gestire l'ansia: strategie pratiche</h3>
+                            <p class="blog-excerpt">Scopri tecniche efficaci per gestire l'ansia quotidiana e ritrovare la serenità</p>
+                            <a href="blog.html#gestire-ansia" class="blog-link">Leggi tutto</a>
+                        </div>
+                    </article>
+
+                    <article class="blog-card reveal-element" role="article">
+                        <div class="blog-image">
+                            <div class="image-placeholder">🎓</div>
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span class="blog-category">Educazione</span>
+                                <time class="blog-date" datetime="2024-01-10">10 Gennaio 2024</time>
+                            </div>
+                            <h3 class="blog-title">Apprendimento efficace: metodi e tecniche</h3>
+                            <p class="blog-excerpt">Approcci innovativi per ottimizzare il tuo processo di apprendimento</p>
+                            <a href="blog.html#apprendimento-efficace" class="blog-link">Leggi tutto</a>
+                        </div>
+                    </article>
+
+                    <article class="blog-card reveal-element" role="article">
+                        <div class="blog-image">
+                            <div class="image-placeholder">🧘‍♀️</div>
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span class="blog-category">Benessere</span>
+                                <time class="blog-date" datetime="2024-01-05">5 Gennaio 2024</time>
+                            </div>
+                            <h3 class="blog-title">Mindfulness: la pratica quotidiana</h3>
+                            <p class="blog-excerpt">Integrare la mindfulness nella tua routine per migliorare il benessere</p>
+                            <a href="blog.html#mindfulness-pratica" class="blog-link">Leggi tutto</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="contatti" class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>MindSpace</h3>
+                    <p>Il tuo spazio per la crescita personale e professionale</p>
+                    <div class="social-links">
+                        <a href="https://facebook.com/mindspace.trieste" target="_blank" rel="noopener" aria-label="Facebook">📘</a>
+                        <a href="https://instagram.com/mindspace.trieste" target="_blank" rel="noopener" aria-label="Instagram">📷</a>
+                        <a href="https://linkedin.com/company/mindspace-trieste" target="_blank" rel="noopener" aria-label="LinkedIn">💼</a>
+                    </div>
+                    <div class="footer-links">
+                        <a href="index.html">Home</a>
+                        <a href="chi-siamo.html">Chi Siamo</a>
+                        <a href="servizi.html">Servizi</a>
+                        <a href="contatti.html">Contatti</a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contatti</h4>
+                    <address>
+                        <p>📍 Via San Michele 13, 34122 Trieste (TS)</p>
+                        <p>📞 +39 348 9044114</p>
+                        <p>✉️ info@mindspace.trieste.it</p>
+                    </address>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Orari</h4>
+                    <p>Lunedì - Venerdì: 9:00 - 20:00</p>
+                    <p>Sabato: 9:00 - 13:00</p>
+                    <p>Domenica: Chiuso</p>
+                    <div class="footer-links">
+                        <a href="privacy.html">Privacy Policy</a>
+                        <a href="cookies.html">Cookie Policy</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 MindSpace. Tutti i diritti riservati.</p>
+                <p>P.IVA: 12345678901 | <a href="privacy.html">Privacy Policy</a> | <a href="cookies.html">Cookie Policy</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Booking Modal -->
+    <div id="booking-modal" class="modal" role="dialog" aria-labelledby="booking-title" aria-hidden="true">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="booking-title">Prenota la tua consulenza</h2>
+                <button class="modal-close" aria-label="Chiudi finestra">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form id="booking-form" class="booking-form">
+                    <div class="form-step active" data-step="1">
+                        <h3>Seleziona il servizio</h3>
+                        <div class="service-options">
+                            <label class="service-option">
+                                <input type="radio" name="service" value="terapia" required>
+                                <span>Area Terapia</span>
+                            </label>
+                            <label class="service-option">
+                                <input type="radio" name="service" value="evolutiva" required>
+                                <span>Area Evolutiva</span>
+                            </label>
+                        </div>
+                        <button type="button" class="next-step" disabled>Prosegui</button>
+                    </div>
+                    
+                    <div class="form-step" data-step="2">
+                        <h3>I tuoi dati</h3>
+                        <div class="form-group">
+                            <label for="name">Nome e Cognome</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Telefono</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        <div class="form-navigation">
+                            <button type="button" class="prev-step">Indietro</button>
+                            <button type="button" class="next-step">Prosegui</button>
+                        </div>
+                    </div>
+                    
+                    <div class="form-step" data-step="3">
+                        <h3>Scegli data e ora</h3>
+                        <div class="form-group">
+                            <label for="date">Data preferita</label>
+                            <input type="date" id="date" name="date" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="time">Orario preferito</label>
+                            <select id="time" name="time" required>
+                                <option value="">Seleziona un orario</option>
+                                <option value="09:00">09:00</option>
+                                <option value="10:00">10:00</option>
+                                <option value="11:00">11:00</option>
+                                <option value="12:00">12:00</option>
+                                <option value="15:00">15:00</option>
+                                <option value="16:00">16:00</option>
+                                <option value="17:00">17:00</option>
+                                <option value="18:00">18:00</option>
+                                <option value="19:00">19:00</option>
+                            </select>
+                        </div>
+                        <div class="form-navigation">
+                            <button type="button" class="prev-step">Indietro</button>
+                            <button type="submit">Prenota</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Quiz Modal -->
+    <div id="quiz-modal" class="modal" role="dialog" aria-labelledby="quiz-title" aria-hidden="true">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="quiz-title">Trova il percorso adatto a te</h2>
+                <button class="modal-close" aria-label="Chiudi finestra">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form id="quiz-form" class="quiz-form">
+                    <div class="quiz-step active" data-step="1">
+                        <h3>Come ti senti ultimamente?</h3>
+                        <div class="quiz-options">
+                            <label class="quiz-option">
+                                <input type="radio" name="q1" value="stress" required>
+                                <span>Stressato/a e ansioso/a</span>
+                            </label>
+                            <label class="quiz-option">
+                                <input type="radio" name="q1" value="confused" required>
+                                <span>Confuso/a e incerto/a</span>
+                            </label>
+                            <label class="quiz-option">
+                                <input type="radio" name="q1" value="blocked" required>
+                                <span>Bloccato/a nella crescita personale</span>
+                            </label>
+                            <label class="quiz-option">
+                                <input type="radio" name="q1" value="curious" required>
+                                <span>Voglio migliorare le mie competenze</span>
+                            </label>
+                        </div>
+                        <button type="button" class="next-quiz-step" disabled>Prosegui</button>
+                    </div>
+                    
+                    <div class="quiz-step" data-step="2">
+                        <h3>Qual è il tuo obiettivo principale?</h3>
+                        <div class="quiz-options">
+                            <label class="quiz-option">
+                                <input type="radio" name="q2" value="wellbeing" required>
+                                <span>Migliorare il benessere emotivo</span>
+                            </label>
+                            <label class="quiz-option">
+                                <input type="radio" name="q2" value="skills" required>
+                                <span>Sviluppare nuove competenze</span>
+                            </label>
+                            <label class="quiz-option">
+                                <input type="radio" name="q2" value="relationships" required>
+                                <span>Migliorare le relazioni</span>
+                            </label>
+                            <label class="quiz-option">
+                                <input type="radio" name="q2" value="performance" required>
+                                <span>Aumentare la performance</span>
+                            </label>
+                        </div>
+                        <div class="quiz-navigation">
+                            <button type="button" class="prev-quiz-step">Indietro</button>
+                            <button type="button" class="next-quiz-step" disabled>Prosegui</button>
+                        </div>
+                    </div>
+                    
+                    <div class="quiz-step" data-step="3">
+                        <h3>Quanto tempo puoi dedicare?</h3>
+                        <div class="quiz-options">
+                            <label class="quiz-option">
+                                <input type="radio" name="q3" value="intensive" required>
+                                <span>Impegnativo (più di 3 ore/settimana)</span>
+                            </label>
+                            <label class="quiz-option">
+                                <input type="radio" name="q3" value="moderate" required>
+                                <span>Moderato (1-3 ore/settimana)</span>
+                            </label>
+                            <label class="quiz-option">
+                                <input type="radio" name="q3" value="light" required>
+                                <span>Leggero (meno di 1 ora/settimana)</span>
+                            </label>
+                        </div>
+                        <div class="quiz-navigation">
+                            <button type="button" class="prev-quiz-step">Indietro</button>
+                            <button type="submit">Scopri il risultato</button>
+                        </div>
+                    </div>
+                </form>
+                
+                <div id="quiz-result" class="quiz-result" style="display: none;">
+                    <h3>Il tuo percorso ideale</h3>
+                    <div id="result-content"></div>
+                    <button id="start-booking" class="cta-primary">Inizia ora</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script src="js/accessibility.js"></script>
+    <script src="js/booking.js"></script>
+    <script src="js/quiz.js"></script>
+</body>
+</html>
